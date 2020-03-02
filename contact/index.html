@@ -235,7 +235,7 @@ img.emoji {
     
     <!--Update the URL for thank you page on form submit -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-    onload="if(submitted) {window.location='https://alextarchini.github.io/WordPressAlex/contact/thanks/';}"></iframe> 
+    onload="if(submitted) {window.location='https://alextarchini.github.io/WordPressAlex/contact/thanks.html';}"></iframe> 
     
     <!-- Update the Google forms URL in action-->
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSftHpVgeVhgEcTXjlqhvdhkHhKqtQ16YfmoEG-NhCq7D5XkIA/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
@@ -269,21 +269,6 @@ img.emoji {
 
             }
             if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-              alert("Please enter your correct name") ;//Validation Message
-              return false;
-            }
-            return true;
-          }
-	 
-	 
-	function validateEmail() {
-            var name = document.getElementById('email').value;
-            if(name.length == 0) {
-              alert("Email can't be blank") ;
-              return false;
-
-            }
-            if (!email.match(@) {
               alert("Please enter your correct name") ;//Validation Message
               return false;
             }

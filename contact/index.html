@@ -230,13 +230,12 @@ img.emoji {
 <!-- Start Contact Section -->
  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
   <div class="w3-content" style="max-width:600px">
-    <h4 class="w3-center"><b>Contact Us</b></h4>
 
     <script type="text/javascript">var submitted=false;</script>
     
     <!--Update the URL for thank you page on form submit -->
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
-    onload="if(submitted) {window.location='http://zerobudget.club/';}"></iframe> 
+    onload="if(submitted) {window.location='https://alextarchini.github.io/WordPressAlex/contact/thanks/';}"></iframe> 
     
     <!-- Update the Google forms URL in action-->
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSftHpVgeVhgEcTXjlqhvdhkHhKqtQ16YfmoEG-NhCq7D5XkIA/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
@@ -275,6 +274,22 @@ img.emoji {
             }
             return true;
           }
+	 
+	 
+	function validateEmail() {
+            var name = document.getElementById('email').value;
+            if(name.length == 0) {
+              alert("Email can't be blank") ;
+              return false;
+
+            }
+            if (!email.match(@) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+	    
 
           function validatePhone() {
             var phone = document.getElementById('phone').value;
